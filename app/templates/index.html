@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<header>
+    <div class="titulo">
+        <h2>Quiz de Perguntas</h2>
+    </div>
+</header>
+
+<main>
+    <div class="container-inicio">
+        <h1>Bem-vindo ao Quiz!</h1>
+    
+        <p>Preparado para testar seus conhecimentos?</p>
+        <a href="/quiz"><button>Começar Quiz</button></a>
+        <a href="/criar_pergunta"><button>Criar Perguntas</button></a>
+    </div>
+     <form action="/reset_perguntas" method="POST">
+          <button type="submit">Deletar Perguntas</button>
+     </form>
+</main>
+
+<footer style="padding: 30px;">
+    <p>Desenvolvido por Andrezinrc.</p>
+</footer>
+{% endblock %}

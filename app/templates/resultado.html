@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2>Resultado</h2>
+    <p>Você acertou {{ pontuacao }} de {{ total_perguntas }} perguntas.</p>
+    <p>Percentual de acertos: {{ percentual }}%</p>
+
+    <p>{{ resultado }}</p>
+    <a href="{{ url_for('index') }}" 
+   style="background: #ff007f; 
+          color: white; 
+          text-decoration: none; 
+          font-weight: bold; 
+          padding: 12px 24px; 
+          display: inline-block; 
+          border-radius: 6px; 
+          font-size: 16px; 
+          text-align: center;
+          white-space: nowrap; 
+          width: auto;">
+    Voltar ao início
+    </a>
+{% endblock %}

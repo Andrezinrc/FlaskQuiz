@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2>Criar Nova Pergunta</h2>
+    <form method="POST" action="/criar_pergunta">
+        <div>
+            <label for="texto">Texto da Pergunta:</label>
+            <input type="text" id="texto" name="texto" required>
+        </div>
+
+        <div>
+            <label for="resposta_correta">Resposta Correta:</label>
+            <select name="resposta_correta" id="resposta_correta" required>
+                <option value="verdadeiro">Verdadeiro</option>
+                <option value="falso">Falso</option>
+            </select>
+        </div>
+        
+        <div>
+            <button type="submit">Criar Pergunta</button>
+        </div>
+
+        <div>
+            <a href="{{ url_for('index') }}" style="color: #ff007f;" >Voltar a o inicio</a>
+        </div>
+    </form>
+{% endblock %}
