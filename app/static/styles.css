@@ -47,6 +47,7 @@ input[type="text"], select {
     font-size: 1rem;
 }
 button {
+  width: 100%;
   background: linear-gradient(135deg, #ff007f, #d4005a);
   color: white;
   border: none;
